@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/beforesearch"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    >
+    <LinearLayout
+        android:layout_width="200dp"
+        android:orientation="horizontal"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/txtBeforeSearch"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center_vertical"
+            android:text="Găng tay chạy xe"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imgBeforeSearch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/gangtay"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
