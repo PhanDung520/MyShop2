@@ -19,6 +19,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityPackage.ChiTietDonHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPackage.DonHangActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityPackage.AllCateChiTiet"
             android:exported="false" />
         <activity

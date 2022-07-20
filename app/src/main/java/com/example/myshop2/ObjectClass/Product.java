@@ -1,7 +1,7 @@
 package com.example.myshop2.ObjectClass;
 
 public class Product {
-    int id,soluong,category_id,rate,price;
+    int id,soluong,category_id,rate,price,order_id;
     String title, thumbnail, description;
 
     public Product(int id, int soluong, int category_id, int rate, int price, String title, String thumbnail, String description) {
@@ -13,6 +13,17 @@ public class Product {
         this.title = title;
         this.thumbnail = thumbnail;
         this.description = description;
+    }
+
+    public Product() {
+    }
+
+    public int getOrder_id() {
+        return order_id;
+    }
+
+    public void setOrder_id(int order_id) {
+        this.order_id = order_id;
     }
 
     public int getId() {

@@ -65,7 +65,7 @@ public class CartActivity extends AppCompatActivity {
         recycleCart = findViewById(R.id.recycleCart);
         txtCartTotalPrice = findViewById(R.id.txtCartTotalPrice);
         btnTotalMua = findViewById(R.id.btnTotalMua);
-
+        btnBackCart = findViewById(R.id.btnBackCart);
 
     }
     public void SetTotalPrice(int totalPrice){
@@ -261,6 +261,8 @@ public class CartActivity extends AppCompatActivity {
                     };
                     requestQueue.add(stringRemove);
                     adapterCart.notifyDataSetChanged();
+                    Intent intent = new Intent(CartActivity.this, DonHangActivity.class);
+                    CartActivity.this.startActivity(intent);
                 }
             }
         });

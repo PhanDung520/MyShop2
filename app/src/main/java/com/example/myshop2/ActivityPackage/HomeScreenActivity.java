@@ -37,7 +37,7 @@ import java.util.ArrayList;
 public class HomeScreenActivity extends AppCompatActivity {
     RecyclerView recycleAllcate, recyclerMostView;
     RelativeLayout layoutSearch;
-    ImageView btnAddUser;
+    ImageView btnAddUser,btnBackCart;
     RecyclerView.Adapter adapterAllcate, adapterMostView;
     ArrayList<MostViewClass> arrayMostView;
     String url="https://nickkimbum.000webhostapp.com/myshopGetData.php";
@@ -71,12 +71,20 @@ public class HomeScreenActivity extends AppCompatActivity {
                 HomeScreenActivity.this.startActivity(intent);
             }
         });
+//        btnBackCart.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(HomeScreenActivity.this,DonHangActivity.class);
+//                HomeScreenActivity.this.startActivity(intent);
+//            }
+//        });
     }
     private void AnhXa() {
         btnAddUser = findViewById(R.id.btnAddUser);
         layoutSearch = findViewById(R.id.layoutSearch);
         recycleAllcate = findViewById(R.id.recycleAllcate);
         recyclerMostView = findViewById(R.id.recycleMostView);
+        btnBackCart = findViewById(R.id.btnBackCart);
     }
     private void SetAllCate(){
         //Smooth
